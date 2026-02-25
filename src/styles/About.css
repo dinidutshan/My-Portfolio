@@ -209,4 +209,13 @@
     }
 
     .about-visual {
-      
+        max-width: 440px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-stats {
+        gap: 12px;
+    }
+}

@@ -431,4 +431,10 @@
         align-items: center;
         gap: 12px;
     }
-
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+}

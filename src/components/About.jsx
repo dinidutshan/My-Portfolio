@@ -65,4 +65,13 @@ export default function About() {
                             </div>
                         </div>
                         <div className="about-cta">
-                            <a href={personalInfo.cvFile} download 
+                            <a href={personalInfo.cvFile} download className="btn-primary">
+                                <i className="fas fa-download" /> Download CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    )
+}
