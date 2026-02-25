@@ -1,0 +1,120 @@
+.leadership {
+    background: var(--bg-secondary);
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.leader-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 24px;
+    transition: var(--transition);
+}
+
+.leader-card:hover {
+    border-color: var(--accent-primary);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-glow);
+}
+
+.leader-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+
+.leader-icon-wrap.secretary {
+    background: rgba(124, 58, 237, 0.15);
+    color: var(--accent-primary);
+}
+
+.leader-icon-wrap.robot {
+    background: rgba(16, 185, 129, 0.12);
+    color: #10b981;
+}
+
+.leader-icon-wrap.media {
+    background: rgba(239, 68, 68, 0.12);
+    color: #ef4444;
+}
+
+.leader-icon-wrap.rep {
+    background: rgba(251, 191, 36, 0.12);
+    color: #fbbf24;
+}
+
+.leader-icon-wrap.mentor {
+    background: rgba(6, 182, 212, 0.12);
+    color: var(--accent-secondary);
+}
+
+.leader-icon-wrap.volunteer {
+    background: rgba(244, 63, 94, 0.12);
+    color: #f43f5e;
+}
+
+.leader-icon-wrap.karate {
+    background: rgba(99, 102, 241, 0.12);
+    color: #818cf8;
+}
+
+.leader-role-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--accent-secondary);
+    background: rgba(6, 182, 212, 0.08);
+    border: 1px solid rgba(6, 182, 212, 0.2);
+    padding: 2px 8px;
+    border-radius: 100px;
+    margin-bottom: 6px;
+}
+
+.leader-title {
+    font-size: 0.975rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 6px;
+}
+
+.leader-org {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.leader-org i {
+    color: var(--accent-primary);
+    font-size: 0.75rem;
+}
+
+.leader-year {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 4px;
+}
+
+.leader-year i {
+    color: var(--accent-primary);
+    font-size: 0.75rem;
+}

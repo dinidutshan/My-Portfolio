@@ -1,0 +1,30 @@
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 46px;
+    height: 46px;
+    background: var(--gradient-accent);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 20px var(--accent-glow);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: var(--transition);
+    z-index: 999;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 28px var(--accent-glow);
+}

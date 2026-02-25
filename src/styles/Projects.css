@@ -1,0 +1,260 @@
+.projects {
+    background: var(--bg-primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: var(--transition);
+}
+
+.project-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow: var(--shadow-glow);
+    transform: translateY(-4px);
+}
+
+.featured-project {
+    grid-column: span 2;
+    background: var(--gradient-card);
+    border-color: var(--accent-primary);
+}
+
+.iot-card {
+    background: linear-gradient(135deg, rgba(6, 182, 212, 0.06), rgba(6, 182, 212, 0.02));
+    border-color: rgba(6, 182, 212, 0.2);
+}
+
+.iot-card:hover {
+    border-color: var(--accent-secondary);
+    box-shadow: 0 0 40px var(--accent-cyan-glow);
+}
+
+.project-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.project-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.ai-icon {
+    background: rgba(124, 58, 237, 0.15);
+    color: var(--accent-primary);
+}
+
+.bot-icon {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.web-icon {
+    background: rgba(251, 191, 36, 0.12);
+    color: #fbbf24;
+}
+
+.elect-icon {
+    background: rgba(239, 68, 68, 0.12);
+    color: #ef4444;
+}
+
+.iot-icon {
+    background: rgba(6, 182, 212, 0.15);
+    color: var(--accent-secondary);
+}
+
+.project-status {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 4px 12px;
+    border-radius: 100px;
+}
+
+.project-status.ongoing {
+    background: rgba(124, 58, 237, 0.12);
+    color: var(--accent-primary);
+}
+
+.project-status.ongoing i {
+    font-size: 0.5rem;
+    animation: pulse-dot 2s ease-in-out infinite;
+}
+
+.project-status.completed {
+    background: rgba(16, 185, 129, 0.1);
+    color: #10b981;
+}
+
+.project-title {
+    font-family: var(--font-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.project-subtitle {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-top: -10px;
+}
+
+.project-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    flex: 1;
+}
+
+.project-techs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: var(--text-secondary);
+}
+
+.tech-badge.python {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.3);
+    color: #60a5fa;
+}
+
+.tech-badge.ai {
+    background: rgba(124, 58, 237, 0.12);
+    border-color: rgba(124, 58, 237, 0.3);
+    color: #a78bfa;
+}
+
+.tech-badge.react {
+    background: rgba(6, 182, 212, 0.1);
+    border-color: rgba(6, 182, 212, 0.3);
+    color: var(--accent-secondary);
+}
+
+.tech-badge.flask {
+    background: rgba(16, 185, 129, 0.1);
+    border-color: rgba(16, 185, 129, 0.3);
+    color: #10b981;
+}
+
+.tech-badge.db {
+    background: rgba(251, 191, 36, 0.1);
+    border-color: rgba(251, 191, 36, 0.3);
+    color: #fbbf24;
+}
+
+.tech-badge.php {
+    background: rgba(99, 102, 241, 0.1);
+    border-color: rgba(99, 102, 241, 0.3);
+    color: #818cf8;
+}
+
+.tech-badge.bootstrap {
+    background: rgba(124, 58, 237, 0.1);
+    border-color: rgba(124, 58, 237, 0.2);
+    color: #c4b5fd;
+}
+
+.tech-badge.js {
+    background: rgba(251, 191, 36, 0.1);
+    border-color: rgba(251, 191, 36, 0.3);
+    color: #fbbf24;
+}
+
+.project-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+}
+
+.highlight-item i {
+    color: var(--accent-secondary);
+    font-size: 0.75rem;
+}
+
+.iot-sub-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.iot-sub {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: rgba(6, 182, 212, 0.06);
+    border: 1px solid rgba(6, 182, 212, 0.15);
+    border-radius: var(--radius-sm);
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.iot-sub:hover {
+    border-color: var(--accent-secondary);
+    color: var(--text-primary);
+}
+
+.iot-sub i {
+    color: var(--accent-secondary);
+}
+
+@media (max-width: 1024px) {
+    .projects-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .featured-project {
+        grid-column: span 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-project {
+        grid-column: span 1;
+    }
+}
