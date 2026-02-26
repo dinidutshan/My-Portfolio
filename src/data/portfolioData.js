@@ -2,6 +2,9 @@
 // ALL CV DATA – Single source of truth
 // ============================================================
 
+// Use BASE_URL for assets so paths work both locally and on GitHub Pages
+const BASE = import.meta.env.BASE_URL
+
 export const personalInfo = {
     name: 'Dinidu Thilakshan',
     firstName: 'Dinidu',
@@ -13,8 +16,8 @@ export const personalInfo = {
     phone: '+94 71 012 8411',
     linkedin: 'https://www.linkedin.com/in/dinidu-thilakshan-454803287',
     github: 'https://github.com/dinidutshan',
-    cvFile: '/mycv.pdf',
-    profileImage: '/profile.png',
+    cvFile: `${BASE}mycv.pdf`,
+    profileImage: `${BASE}profile.png`,
 }
 
 export const aboutMe = {
