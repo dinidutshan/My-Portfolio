@@ -196,13 +196,13 @@
 
 .hero-avatar-ring {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 310px;
+    height: 310px;
 }
 
 .hero-avatar {
     position: absolute;
-    inset: 30px;
+    inset: 25px;
     border-radius: 50%;
     background: linear-gradient(135deg, #1a0a3d, #0a2a4a);
     display: flex;
